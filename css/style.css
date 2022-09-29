@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 *{
     margin: 0; 
     border: 0; 
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
 
-}
-body{
-    overflow-y: scroll;
 }
 
 .banner img{
@@ -55,8 +53,10 @@ header nav ul li a{
 h1{
     text-align: center;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 50px
+    font-size: 50px;
 }
+    
+
 h2{
     text-align: center;
     font-size: 40px;
@@ -114,29 +114,47 @@ position: absolute;
     align-items: stretch;
 }
 .centros{
-
+    /*Flexbox*/
+    /*
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 50px;
+    margin: 50px;*/
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
 }
+
 .centros .sucursal{
+    /*Flexbox*/
+    /*
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 200px;
+    margin-bottom: 200px; */
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+
 }
 .centros .sucursal .contenido{
+    /*Flexbox*/
+    /*
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 .centros .sucursal .contenido .textos{
+    /*Flexbox*/
+    
     display: flex;
     flex-direction: column;
     margin-left: 30px;
 }
-.centros .sucursal .contenido .textos p{
+.centros .sucursal .contenido .textos p{    
     margin-top: 30px;
 }
 
@@ -145,12 +163,12 @@ position: absolute;
 }
 
 .centros .sucursal .contenido img{
-    width: 300px;
+    width: 100%;
 }
 
 .centros .sucursal .mapa {
-    width: 40%;
-    height: 100px;
+    width: 100%;
+    height: auto;
 }
 .promolist , .serviceList{
     display: flex;
@@ -208,3 +226,83 @@ position: absolute;
     margin-bottom:50px;
     margin-top: 10px;
  }
+
+
+ @media only screen and (max-width: 768px) {
+    h1{
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    header nav{
+        background-color: #FFA4B6;
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header nav ul li a{
+        font-size: 16px;
+        font-weight:normal;
+    }
+    .team {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .team .member{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .team .member img{
+       width: 50%;
+    }
+    .centros{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 15px;
+    }
+    .centros .sucursal {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns :1fr;
+        gap: 15px;
+    }
+    .centros .sucursal .contenido{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns :1fr;
+        gap: 10px;
+    }
+    .centros .sucursal .mapa{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .serviceList {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+
+    }
+    .serviceList .service{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .serviceList .service img{
+        width: 90%;
+    }
+    
+}
+ 
