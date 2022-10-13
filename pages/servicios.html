@@ -5,42 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Depilación Láser segura y efectiva. Consigue hoy tu tratamiento y agenda con nosotros">
+    <meta name="keywords" content="depilacion, depilacion laser, alexandrita, estetica">
     <link rel="apple-touch-icon" sizes="180x180" href="../images/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/img/favicon-16x16.png">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Css Bootstrap -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <!--JS Bootstrap-->
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js">
+    </script>
     <title>Servicios</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <!--logo-->
-            <a href="../index.html">
-                <img id="logo" src="../images/img/logo2.png" alt="">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="../images/img/logo2.png" alt="logo">
             </a>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="./quienessomos.html">Quienes Somos</a></li>
-                <li><a href="./sucursales.html">Sucursales</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Servicios<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/quienessomos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/sucursales.html">Sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <div class="bannerService">
             <h1 class="animate__animated  animate__flip">Tratamientos</h1>
-            <img src="../images/img/service0.jpg" alt="">
+            <img src="../images/img/service0.jpg" alt="banner tratamientos">
         </div>
         <div class="serviceList">
             <div class="service">
                 <h2>Láser Femenino</h2>
-                <img src="../images/img/service1.jpg" alt="">
+                <img src="../images/img/service1.jpg" alt="laser femenino">
             </div>
             <div class="service">
                 <h2>Láser Masculino</h2>
-                <img src="../images/img/depilacion hombre.jpg" alt="">
+                <img src="../images/img/depilacion hombre.jpg" alt="laser masculino">
             </div>
         </div>
     </main>
