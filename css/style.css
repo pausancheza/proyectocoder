@@ -55,14 +55,11 @@ h1{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 50px;
 }
-    
-
 h2{
     text-align: center;
     font-size: 40px;
     color: #414146;
 }
-
 h5{
     text-align: center;
     font-family: 'Nunito Sans', sans-serif;
@@ -114,42 +111,23 @@ position: absolute;
     align-items: stretch;
 }
 .centros{
-    /*Flexbox*/
-    /*
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 50px;*/
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 50px;
 }
 
 .centros .sucursal{
-    /*Flexbox*/
-    /*
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 200px; */
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap: 70px;
 
 }
 .centros .sucursal .contenido{
-    /*Flexbox*/
-    /*
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 .centros .sucursal .contenido .textos{
-    /*Flexbox*/
-    
     display: flex;
     flex-direction: column;
     margin-left: 30px;
